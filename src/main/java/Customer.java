@@ -24,11 +24,11 @@ public class Customer implements ParkingConstant {
             ParkingLot parkingLot = ticketingSystem.getParkingLot();
         } else if (ParkingState.PARK.equals(request)) {// Statements
 
-            System.out.println(ticketingSystem.issueTicket(ParkingState.PARK, this));
+            ticketingSystem.issueTicket(ParkingState.PARK, this);
 
         } else if (ParkingState.LEAVE.equals(request)) {// Statements
-            System.out.println(ticketingSystem.leaveParking(ParkingState.LEAVE, this, 1).toString());
-
+            ticketingSystem.leaveParking(ParkingState.LEAVE, this, 1).toString();
+            System.out.println();
         }
 
     }

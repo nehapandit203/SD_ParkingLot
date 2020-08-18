@@ -4,5 +4,6 @@ public class App {
 
         customer.cutomerRequest(ParkingConstant.ParkingState.PARK);
         customer.cutomerRequest(ParkingConstant.ParkingState.LEAVE);
+        System.out.println();
     }
 }
